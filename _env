@@ -1,0 +1,2 @@
+DOCKER_DB_HOST=db
+COMPOSE_PROJECT_NAME=neos-playground
