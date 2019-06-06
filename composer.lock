@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd9f13ccc0cdcaf945d483343192d9e2",
+    "content-hash": "442f0f32be8dff115708764bcd7d4e70",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -49,6 +49,30 @@
                 "transliterator"
             ],
             "time": "2017-04-04T11:38:05+00:00"
+        },
+        {
+            "name": "cron/behattester",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./DistributionPackages/CRON.BehatTester",
+                "reference": "1a77957ba8e9064ac7497dd25fda5b9b04765bc7",
+                "shasum": null
+            },
+            "require": {
+                "neos/flow": "*"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "CRON.BehatTester"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CRON\\BehatTester\\": "Classes/"
+                }
+            }
         },
         {
             "name": "doctrine/annotations",
@@ -7295,6 +7319,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "neos/setup": 20,
+        "cron/behattester": 20,
         "neos/buildessentials": 20,
         "neos/behat": 20
     },
