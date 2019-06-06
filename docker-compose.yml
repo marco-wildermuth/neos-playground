@@ -1,32 +1,23 @@
 ---
 version: '3.1'
-secrets:
-  id_rsa:
-    file: ./docker/deploy_rsa
 
 services:
   web:
-    image: remuslazar/docker-neos-alpine:testing
+    image: croneu/neos
     hostname: neos-playground
     ports:
-    - '8081:8081'
-    - '1123:22'
+    - '8080:8080'
+    - '1122:22'
     links:
     - db
     volumes:
-    - data:/data
+    - data
     - .:/src
-    secrets:
-    - id_rsa
     environment:
-      DB_HOST: ${DOCKER_DB_HOST}
-      WWW_PORT: 8081
-      # we provision the container from the local directory, see the /src mount
-      # REPOSITORY_URL: 'git@github.com:remuslazar/davshop-base.git'
+      WWW_PORT: 8080
       SITE_PACKAGE: 'Neos.Demo'
-      # VERSION: 'develop'
       ADMIN_PASSWORD: 'password'
-      IMPORT_GITHUB_PUB_KEYS: ${IMPORT_GITHUB_PUB_KEYS}
+      IMPORT_GITHUB_PUB_KEYS: ${GITHUB_USERNAME}
       COMPOSER_INSTALL_PARAMS: '--prefer-dist'
   db:
     image: mariadb:latest
@@ -39,9 +30,3 @@ services:
       MYSQL_USER: 'admin'
       MYSQL_PASSWORD: 'pass'
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
-
-volumes:
-  data:
-
-networks:
-  default:

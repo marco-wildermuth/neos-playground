@@ -3,22 +3,20 @@ Neos Playground
 
 ### Github username(s)
 
+Make sure you have the global ENV var `GITHUB_USERNAME` configured with your
+Github username. You can also use `.env` for that:
+
 ```bash
-cp _env .env
-echo "IMPORT_GITHUB_PUB_KEYS=$(whoami)" >> .env
+echo "GITHUB_USERNAME=MY_GITHUB_USERNAME" > .env
+```
+
+OR
+
+```bash
+export GITHUB_USERNAME=MY_GITHUB_USERNAME
 ```
 
 ### Docker Setup
-
-#### Deployment key
-
-Make sure to configure a (personal) deployment key, so the docker container can access the repository.
-
-Do:
-
-```bash
-ssh-keygen -t rsa -f docker/deploy_rsa -C "$(whoami) $(basename $(pwd)) deploy key" -N ""
-```
 
 #### .dev Hostname
 
@@ -43,11 +41,11 @@ docker-compose logs -f web
 
 The Web-Server is now ready to serve incoming requests:
 
-<http://dev.neos-playground.docker:8081/>
+<http://dev.neos-playground.docker:8080/>
 
 
 ### Access the Web Container via SSH
 
 ```bash
-ssh -p1123 www-data@dev.neos-playground.docker
+ssh -p1122 www-data@dev.neos-playground.docker
 ```
