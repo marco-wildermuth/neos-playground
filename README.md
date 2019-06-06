@@ -1,5 +1,6 @@
-Neos Playground
-==
+
+# Neos.Demo Docker Playground [![CircleCI](https://circleci.com/gh/cron-eu/neos-playground.svg?style=svg)](https://circleci.com/gh/cron-eu/neos-playground)
+
 
 ### Github username(s)
 
