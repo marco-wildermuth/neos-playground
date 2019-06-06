@@ -4,6 +4,7 @@ jobs:
     machine:
       image: circleci/classic:edge
     steps:
+      - checkout
       - run:
           name: Run docker-compose up and check if the web-server renders the homepage correctly
           command: |
@@ -13,6 +14,7 @@ jobs:
     machine:
       image: circleci/classic:edge
     steps:
+      - checkout
       - run: |
           docker-compose -f docker-compose.yml -f docker-compose.behat.yml run --rm --service-ports web \
               sudo -u www-data cd /data/www/Packages/Application/CRON.BehatTester/Tests/Behavior /data/www/bin/behat
