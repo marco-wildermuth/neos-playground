@@ -20,7 +20,7 @@ services:
       IMPORT_GITHUB_PUB_KEYS: ${GITHUB_USERNAME}
       COMPOSER_INSTALL_PARAMS: '--prefer-dist'
   db:
-    image: mariadb:latest
+    image: mariadb:10.3
     expose:
     - 3306
     volumes:
