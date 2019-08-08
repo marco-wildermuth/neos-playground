@@ -19,7 +19,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/doctrine/reflection" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/gedmo/doctrine-extensions" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/imagine/imagine" />
-      <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/mikey179/vfsStream" />
+      <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/mikey179/vfsstream" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/cache" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/composer-plugin" />
@@ -73,6 +73,8 @@
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/symfony/dom-crawler" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/typo3fluid/fluid" />
