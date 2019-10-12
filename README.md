@@ -8,7 +8,10 @@ Make sure you have the global ENV var `GITHUB_USERNAME` configured with your
 Github username. You can also use `.env` for that:
 
 ```bash
-echo "GITHUB_USERNAME=MY_GITHUB_USERNAME" > .env
+echo "GITHUB_USERNAME=MY_GITHUB_USERNAME" >> .env
+# or
+echo "GITLAB_USERNAME=MY_GITLAB_USERNAME" >> .env
+echo "GITLAB_URL=https://gitlab.my-company.org" >> .env
 ```
 
 OR
