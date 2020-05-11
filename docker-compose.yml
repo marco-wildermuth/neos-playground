@@ -32,6 +32,8 @@ services:
       MYSQL_USER: 'admin'
       MYSQL_PASSWORD: 'pass'
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+    ports:
+      - 13306:3306
 
 volumes:
   data:
