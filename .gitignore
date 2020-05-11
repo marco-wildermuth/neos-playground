@@ -21,7 +21,11 @@
 /Build/Resources
 /Configuration/
 /Data/
-/Packages/
+/Packages/Application/
+/Packages/Framework/
+/Packages/Libraries/
+/Packages/Plugins/
+/Packages/Sites/Neos.Demo
 /Web/
 /bin/
 /Readme.txt
